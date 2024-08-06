@@ -1,0 +1,7 @@
+{
+  "name": "swiper-issue",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
