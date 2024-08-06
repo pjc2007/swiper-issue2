@@ -14,8 +14,15 @@
     </ion-toolbar>
   </ion-header>
 
-  <div id="container">
-    <strong class="capitalize">{{ folder }}</strong>
-    <p>Explore <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+  
+    <swiper-container events-prefix="swiper-" [modules]="swiperModules" [loop]="false" [pagination]="true" #swiper
+    (swiper-slidechange)='slideChanged($event)'>>
+     <swiper-slide>
+      <app-page1></app-page1>
+     </swiper-slide>
+     <swiper-slide>
+      <app-page2></app-page2>
+     </swiper-slide>
+  </swiper-container>
+  
 </ion-content>

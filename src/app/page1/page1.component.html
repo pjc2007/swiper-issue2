@@ -1,0 +1,26 @@
+<div id='container'>
+  <div id="selects">
+
+  
+  <ion-select id="select1" [interfaceOptions]='{ backdropDismiss: false }'
+    [ngModel]='selectedItem' >
+    <ion-select-option>Option 1</ion-select-option>
+    <ion-select-option>Option 2</ion-select-option>
+  </ion-select>
+
+  <ion-select id="select2" [interfaceOptions]='{ backdropDismiss: false }'
+    [ngModel]='selectedItem' >
+    <ion-select-option>Option 3</ion-select-option>
+    <ion-select-option>Option 4</ion-select-option>
+  </ion-select>
+
+</div>
+
+<ion-button id="details-button" size='small' class="swiper-no-swiping">Details</ion-button>
+   
+  
+  <div id='canvas-container'>
+    <canvas #canvas></canvas>
+  </div>
+
+  <div id='footer'></div>
